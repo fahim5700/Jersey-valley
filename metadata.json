@@ -1,0 +1,6 @@
+{
+  "name": "Jersey Valley",
+  "description": "Premium sports-fashion eCommerce for luxury football jerseys and streetwear.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

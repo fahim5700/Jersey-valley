@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&display=swap');
+@import "tailwindcss";
+
+@theme inline {
+    --font-heading: "Playfair Display", serif;
+    --font-sans: 'Inter', sans-serif;
+    --color-primary: #D4AF37;
+    --color-primary-foreground: #000000;
+    --color-background: #0a0a0a;
+    --color-foreground: #ffffff;
+    --color-card: #141414;
+    --color-border: rgba(255, 255, 255, 0.05);
+}
+
+:root {
+    --background: #ffffff;
+    --foreground: #0a0a0a;
+    --primary: #D4AF37;
+    --primary-foreground: #ffffff;
+    --radius: 0rem;
+}
+
+.dark {
+    --background: #0a0a0a;
+    --foreground: #ffffff;
+    --card: #111111;
+    --card-foreground: #ffffff;
+    --primary: #D4AF37;
+    --primary-foreground: #000000;
+    --border: rgba(255, 255, 255, 0.1);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+  html {
+    @apply font-sans;
+  }
+}
+
+.serif-heading {
+  @apply font-heading italic tracking-tighter;
+}
+
+.gold-text {
+  @apply text-primary;
+}
+
+.nav-link {
+  @apply text-[10px] uppercase tracking-[0.3em] font-bold text-white/50 hover:text-primary transition-all cursor-pointer;
+}
